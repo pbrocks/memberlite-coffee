@@ -9,10 +9,6 @@
 //Define constants
 define( 'MEMBERLITE_COFFEE_DIR', get_stylesheet_directory() );
 
-
-//Required files
-require_once( MEMBERLITE_COFFEE_DIR . '/inc/defaults.php' );
-
 //Enqueue scripts and styles.
 function memberlite_coffee_enqueue_styles() {
 
@@ -74,6 +70,38 @@ function memberlite_coffee_color_schemes( $color_schemes ) {
 		)
 	);
 
+	// Cappuccino color scheme.
+	$color_schemes['cappuccino'] = array(
+		'label' => __( 'Cappuccino', 'memberlite-coffee' ),
+		'colors' => array(
+			'#FFF',
+			'#BB9966',
+			'#996633',
+			'#FFF',
+			'#FFF',
+			'#FFF',
+			'#663300',
+			'#663300',
+			'#BB9966',
+		)
+	);
+
+	// Just Black color scheme.
+	$color_schemes['just_black'] = array(
+		'label' => __( 'Just Black', 'memberlite-coffee' ),
+		'colors' => array(
+			'#3B444B',
+			'#000',
+			'#1B1B1B',
+			'#3B444B',
+			'#3B444B',
+			'#3B444B',
+			'#3B444B',
+			'#000',
+			'#FFF',
+		)
+	);
+
 	// Latte color scheme.
 	$color_schemes['latte'] = array(
 		'label' => __( 'Latte', 'memberlite-coffee' ),
@@ -90,25 +118,36 @@ function memberlite_coffee_color_schemes( $color_schemes ) {
 		)
 	);
 
-	// Mocha color scheme.
-	$color_schemes['mocha'] = array(
-		'label' => __( 'Mocha', 'memberlite-dark' ),
+	$color_schemes['pumpkin_spice'] = array(
+		'label' => __( 'Pumpkin Spice', 'memberlite-coffee' ),
 		'colors' => array(
-			'#000',
-			'#000',
-			'#000',
-			'#000',
-			'#000',
-			'#000',
-			'#000',
+			'#A26448',
+			'#49392b',
+			'#774F3E',
+			'#C76644',
+			'#C76644',
+			'#C76644',
+			'#A26448',
 			'#000',
 			'#000',
 		)
 	);
 
-	//@todo: add more predefined dark color schemes.
-	// Coffee color scheme taken from 7 Sophisticated and Calm.
-	// have a look @link: http://blog.visme.co/color-combinations/ for color combinations. (2 Classic Retro, 17 Gothic Architecture, 18 Fiery Landscape, 20 Natural Elegance, 22 On the Dock of the Bay, 30 Twilight Moon, 35 Lemon in Water, 37 Riverside London, 42 Earthy and Natural, )
+	// Mocha color scheme.
+	$color_schemes['mocha'] = array(
+		'label' => __( 'Mocha', 'memberlite-coffee' ),
+		'colors' => array(
+			'#6B3F3A',
+			'#90645D',
+			'#2E1915',
+			'#6B3F3A',
+			'#6B3F3A',
+			'#6B3F3A',
+			'#6b3F3A',
+			'#000',
+			'#000',
+		)
+	);
 
 	return $color_schemes;
 }
