@@ -1,9 +1,9 @@
 <?php
 /**
- * Memberlite - Child Theme functions and definitions
+ * Memberlite [Coffee] Child Theme functions and definitions
  *
  * @package Memberlite 2.0
- * @subpackage Memberlite - Child Theme 1.0
+ * @subpackage Memberlite Words 1.0
  */
 
 //Define constants
@@ -118,7 +118,7 @@ function memberlite_coffee_color_schemes( $color_schemes ) {
 		)
 	);
 
-	// Pumkin Spice color scheme.
+	// Pumpkin Spice color scheme.
 	$color_schemes['pumpkin_spice'] = array(
 		'label' => __( 'Pumpkin Spice', 'memberlite-coffee' ),
 		'colors' => array(
