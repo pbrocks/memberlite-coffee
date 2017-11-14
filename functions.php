@@ -118,6 +118,7 @@ function memberlite_coffee_color_schemes( $color_schemes ) {
 		)
 	);
 
+	// Pumkin Spice color scheme.
 	$color_schemes['pumpkin_spice'] = array(
 		'label' => __( 'Pumpkin Spice', 'memberlite-coffee' ),
 		'colors' => array(
